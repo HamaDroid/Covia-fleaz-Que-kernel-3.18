@@ -1,0 +1,17 @@
+config MTK_FLASHLIGHT
+  bool CONFIG_MTK_FLASHLIGHT
+  default n
+  help
+    CONFIG_MTK_FLASHLIGHT
+
+config MTK_FLASHLIGHT_DRIVER_CHIP
+  bool CONFIG_MTK_FLASHLIGHT_DRIVER_CHIP
+  string "MTK_FLASHLIGHT_DRIVER_CHIP"
+  default n
+
+config CUSTOM_KERNEL_FLASHLIGHT
+        string "CUSTOM_KERNEL_FLASHLIGHT"
+        help
+          Kernel space cameara flashlight driver. You can use this driver
+          choose cameara flashlight type.
+

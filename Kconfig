@@ -1,0 +1,34 @@
+#
+# For a description of the syntax of this configuration file,
+# see Documentation/kbuild/kconfig-language.txt.
+#
+mainmenu "Linux/$ARCH $KERNELVERSION Kernel Configuration"
+
+config SRCARCH
+	string
+	option env="SRCARCH"
+
+source "arch/$SRCARCH/Kconfig"
+
+config PROJECT_L7
+	bool "mibound project L7"
+	default n
+
+config PROJECT_M7
+	bool "mibound project M7"
+	default n
+
+config PROJECT_T62
+	bool "mibound project T62"
+	default n
+
+config HIGHCURRENT_1500MA
+	bool "fan5405 & ET9520 support 1500mA charging current"
+	default n
+
+config ESD_OLD_STYLE
+	bool "turn on esd by lcm code not by dts"
+	default n
+config CUSTOM_M7
+	bool "mibound M7"
+	default n
